@@ -6,9 +6,7 @@ Application in Radial Velocity Inversion*. The case study estimates a 10-layer
 radial shear-wave velocity profile from a 256-point dipole-acoustic dispersion
 response.
 
-This package intentionally contains **no standalone manuscript
-figure-generation scripts**. It
-contains the training, dataset-construction, evaluation, and aggregate-result
+This package contains the training, dataset-construction, evaluation, and aggregate-result
 files needed to reproduce the reported protocol. The complete forward-modelled
 training dataset is distributed separately through Mendeley Data because it is
 approximately 493 MB.
