@@ -1,0 +1,10 @@
+{
+  "experiment_name": "paper_sampling_d1_d2_d3",
+  "benchmark_config": "../configs/paper_common_transformer_sp.json",
+  "benchmark_overrides": {"architectures": ["Transformer_SP"]},
+  "sampling_datasets": [
+    {"key": "D1", "label": "Wide random (middle-biased)", "train_data_file": "../datasets/derived/mat/sampling_d1_wide_random_51047.mat"},
+    {"key": "D2", "label": "Physics-filtered random", "train_data_file": "../datasets/derived/mat/sampling_d2_physics_random_51047.mat"},
+    {"key": "D3", "label": "Coverage-constrained", "train_data_file": "../datasets/derived/mat/sampling_d3_coverage_constrained_51047.mat"}
+  ]
+}

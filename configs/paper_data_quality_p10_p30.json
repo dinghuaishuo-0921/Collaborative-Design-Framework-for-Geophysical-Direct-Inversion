@@ -1,0 +1,11 @@
+{
+  "experiment_name": "paper_data_quality_p10_p30",
+  "benchmark_config": "../configs/paper_common_transformer_sp.json",
+  "benchmark_overrides": {"architectures": ["Transformer_SP"]},
+  "sampling_datasets": [
+    {"key": "Clean", "label": "Physics-filtered clean", "train_data_file": "../datasets/derived/mat/sampling_d2_physics_random_51047.mat"},
+    {"key": "P10", "label": "10% contaminated labels", "train_data_file": "../datasets/derived/mat/sampling_polluted_p10_51047.mat"},
+    {"key": "P20", "label": "20% contaminated labels", "train_data_file": "../datasets/derived/mat/sampling_polluted_p20_51047.mat"},
+    {"key": "P30", "label": "30% contaminated labels", "train_data_file": "../datasets/derived/mat/sampling_polluted_p30_51047.mat"}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "experiment_name": "sampling_mode_contrast",
+  "benchmark_config": "../configs/paper_common_transformer_sp.json",
+  "benchmark_overrides": {
+    "architectures": ["Transformer_SP"],
+    "external_data_files": ["../datasets/derived/mat/sampling_common_fullrange_test_5105.mat"],
+    "train_seeds": [42, 2026, 3407],
+    "epochs": 80,
+    "early_stop_patience": 24,
+    "early_stop_min_delta": 0.1,
+    "external_eval_max_samples": 0,
+    "primary_evaluation_dataset": "sampling_common_fullrange_test_5105"
+  },
+  "sampling_datasets": [
+    {
+      "key": "R_QC_MINUS",
+      "label": "R-QC-: random without quality control",
+      "train_data_file": "../datasets/derived/mat/sampling_r1_random_uncontrolled_40000.mat",
+      "notes": "随机抽样，保留 10% 错误标签配对和 10% 15 dB 受扰动频散响应。"
+    },
+    {
+      "key": "B_RANGE",
+      "label": "B-Range: incomplete 1200-3000 m/s support",
+      "train_data_file": "../datasets/derived/mat/sampling_r2_range_biased_1200_3000_40000.mat",
+      "notes": "质量控制后随机抽样，但训练速度空间仅覆盖 1200-3000 m/s。"
+    },
+    {
+      "key": "C_COVERAGE",
+      "label": "C-Coverage: quality-controlled full-range sampling",
+      "train_data_file": "../datasets/derived/mat/sampling_r3_coverage_constrained_40000.mat",
+      "notes": "质量控制后，在 1200-3500 m/s 全范围内按速度、总增幅和曲率配额组织采样。"
+    }
+  ]
+}

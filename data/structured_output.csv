@@ -1,0 +1,4 @@
+architecture,label,internal_clean_mae_mean,internal_clean_mae_std,internal_10db_mae_mean,internal_10db_mae_std,external_clean_mae_mean,external_clean_mae_std,violation_rate_percent_mean,violation_rate_percent_std
+Transformer,Free output,23.29489136,0.162619513,38.56175868,0.772683059,43.29489136,22.67158021,2.238655,0.113095058
+Transformer_SOFT,Free + soft penalty,19.03100586,0.077604119,37.87625758,0.052688306,19.03100586,7.400694802,0.8945478,0.118074707
+Transformer_SP,Structured output,14.87329102,0.370244816,39.73157756,0.115670679,14.87329102,3.949070309,0,0
