@@ -160,7 +160,7 @@ subset for user-developed training demonstrations.
 
 The full training pool is released separately through Mendeley Data because it
 is approximately 493 MB. Download
-`radial_velocity_direct_inversion_training_dataset_v1.mat` and place it at:
+`radial_velocity_direct_inversion_training_dataset_v1.mat` and place it at:https://data.mendeley.com/datasets/tkk3ky532f/1
 
 ```text
 datasets/radial_velocity_direct_inversion_training_dataset_v1.mat
