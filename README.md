@@ -192,8 +192,7 @@ manuscript-to-table mapping.
 ## Data and Code Availability
 
 - **Code, configurations, examples, and aggregate results:** this repository.
-- **Full synthetic training data:** associated Mendeley Data record; the DOI
-  will be added after publication.
+- **Full synthetic training data:** associated Mendeley Data record; the DOI is: https://data.mendeley.com/datasets/tkk3ky532f/1
 - **Field logging data:** not redistributed because of data-use restrictions.
 
 ## License
