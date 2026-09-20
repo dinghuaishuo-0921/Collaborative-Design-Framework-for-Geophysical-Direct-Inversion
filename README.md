@@ -105,13 +105,11 @@ examples/   Directly runnable checks and a 10,000-sample training subset
 | --- | --- |
 | `data/main_model_noise_metrics_d3.csv` | Main Transformer-SP accuracy and robustness metrics across noise levels. |
 | `data/main_model_layer_mae_by_noise_d3.csv` | Layer-wise MAE of the main model at each noise level. |
-| `data/prediction_profiles_all_noise_d3.csv` | Representative prediction profiles used for qualitative comparison. |
 | `data/sampling_strategy.csv` | D1/D2/D3 coverage statistics and internal/external performance metrics. |
 | `data/data_quality_pollution.csv` | Accuracy changes after P10, P20, and P30 data contamination. |
 | `data/transformer_scale_consistent_10k_200k.csv` | Final 10k-200k training-scale metrics for Transformer-SP. |
 | `data/structured_output.csv` | Core free, soft, and structured output-mode metrics. |
 | `data/structured_output_noise_metrics.csv` | Output-mode metrics across noise conditions. |
-| `data/encoder_replaceability.csv` | Accuracy, parameter count, training time, and external-test metrics for five encoders. |
 | `data/encoder_noise_metrics.csv` | Encoder robustness metrics across noise levels. |
 | `data/aggregate_architecture_scale_point_metrics_mean_std.csv` | MLP depth and training-scale aggregate point metrics. |
 | `data/README.md` | Mapping between manuscript analyses and all aggregate CSV tables. |
